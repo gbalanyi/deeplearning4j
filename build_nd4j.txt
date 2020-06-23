@@ -1,0 +1,4 @@
+// Build CUDA support for Jetson AGX Xavier
+mvn clean deploy -Djavacpp.platform=linux-arm64 -Dlibnd4j.chip=cuda -s <settings.xml> -f nd4j/nd4j-backends/nd4j-backend-impls -P testresources
+// Build CPU support for Jetson AGX Xavier
+mvn clean deploy -Djavacpp.platform=linux-arm64 -Dlibnd4j.chip=cpu -s <settings.xml> -f nd4j/nd4j-backends/nd4j-backend-impls -P testresources
