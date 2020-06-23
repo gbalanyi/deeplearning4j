@@ -1,0 +1,1 @@
+mvn clean deploy -Dmaven.test.skip=true -Djavacpp.platform=linux-arm64 -s <settings.xml> -f deeplearning4j/deeplearning4j-cuda
